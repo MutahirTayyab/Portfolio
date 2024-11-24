@@ -1,3 +1,17 @@
+// Side Menu Section
+var sideMenu=document.getElementById('sidemenu');
+
+function openMenu(){
+    // It will enable the Side Menu
+    sideMenu.style.right="0";   
+}
+
+function closeMenu(){
+    // It will disable the Side Menu
+    sideMenu.style.right="-200px";
+}
+
+
 // About Section
 var tabLinks=document.getElementsByClassName("tab-links");
 var tabContents=document.getElementsByClassName("tab-contents");
@@ -15,20 +29,6 @@ function openTab(tabName){
     event.currentTarget.classList.add("active-link");
     // It will display the Content of the Active Tab
     document.getElementById(tabName).classList.add("active-tab");
-}
-
-
-// Side Menu Section
-var sideMenu=document.getElementById('sidemenu');
-
-function openMenu(){
-    // It will enable the Side Menu
-    sideMenu.style.right="0";   
-}
-
-function closeMenu(){
-    // It will disable the Side Menu
-    sideMenu.style.right="-200px";
 }
 
 

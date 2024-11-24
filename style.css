@@ -56,7 +56,7 @@ nav ul li a{
 /* Hover Effect */
 nav ul li a::after{
     content: '';
-    width: 0;   /* It will hide the Red Line */
+    width: 0;   /* It will hide the Hover Effect Red Line */
     height: 3px;
     background-color: #ff004f;
     position: absolute;
@@ -66,7 +66,7 @@ nav ul li a::after{
 }
 
 nav ul li a:hover::after{
-    width: 100%;   /* It will enable the Red Line */
+    width: 100%;   /* It will enable the Hover Effect Red Line */
 }
 
 .header-text{
@@ -132,9 +132,10 @@ nav ul li a:hover::after{
     position: relative;
 }
 
+/* Hover Effect */
 .tab-links::after{
     content: '';
-    width: 0;   /* It will hide the Red Line */
+    width: 0;   /* It will hide the Hover Effect Red Line */
     height: 3px;
     background-color: #ff004f;
     position: absolute;
@@ -143,10 +144,12 @@ nav ul li a:hover::after{
     transition: 0.9s;   /* Slowing Down the Hover Effect */
 }
 
+/* It will only display the Hover Effect Red Line on the Active Link which is Skills  */
 .tab-links.active-link::after{
-    width: 50%;   /* It will enable the Red Line */
+    width: 50%;   /* It will enable the Hover Effect Red Line */
 }
 
+/* It will display the Hover Effect Red Line on all the Active Links */
 /* .tab-links:hover::after{ */
     /* width: 50%;   It will enable the Red Line */
 /* } */
@@ -166,7 +169,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents.active-tab{
-    display: block;   /* It will Display the Tab Content like Skills*/
+    display: block;   /* It will Display the Active Tab Content which is Skills */
 }
 
 
@@ -177,8 +180,8 @@ nav ul li a:hover::after{
 
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));   /* It divides the Boxes into Coloumns */
+    grid-gap: 40px;   /* It creates Gap between Boxes */
     margin-top: 50px;
 }
 
@@ -189,6 +192,11 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;   /* Slowing Down the Hover Effect */
+}
+
+.services-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);   /* It will move Boxes in Upward Direction by 10px */
 }
 
 .services-list div i{
@@ -202,6 +210,10 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
 }
 
+.services-list div p{
+    text-align: justify;
+}
+
 .services-list div a{
     text-decoration: none;
     color: #fff;
@@ -210,9 +222,8 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.services-list div:hover{
-    background-color: #ff004f;
-    transform: translateY(-10px);   /* It will move Boxes in Upward Direction by 10px */
+.services-list div a:hover{
+    text-decoration: underline;
 }
 
 
@@ -223,14 +234,14 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));   /* It divides the Boxes into Coloumns */
+    grid-gap: 40px;   /* It creates Gap between Boxes */
     margin-top: 50px;    
 }
 
 .work{
     border-radius: 10px;
-    position: relative;
+    position: relative;   /* It will display the Link to the project */
     overflow: hidden;
 }
 
@@ -239,6 +250,10 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+}
+
+.work:hover img{
+    transform: scale(1.1);   /* It will Zoom In the Image */
 }
 
 .layer{
@@ -260,9 +275,17 @@ nav ul li a:hover::after{
     transition: height 0.5s;
 }
 
+.work:hover .layer{
+    height: 100%;   /* To display the Content  */
+}
+
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+.layer p{
+    text-align: justify;
 }
 
 .layer a{
@@ -276,14 +299,6 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
-}
-
-.work:hover img{
-    transform: scale(1.1);   /* It will Zoom In the Image */
-}
-
-.work:hover .layer{
-    height: 100%;   /* To display the content  */
 }
 
 .btn{
@@ -440,8 +455,10 @@ nav .fa-solid{
     /* .about-col-1, .about-col-2{
         flex-basis: 100%;
     } */
+
     .row{
         flex-direction: column;
+        justify-content: center;
     }
 
     .about-col-1{
@@ -457,9 +474,9 @@ nav .fa-solid{
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right{
+    /* .contact-left, .contact-right{
         flex-basis: 100%;
-    }
+    } */
 
     .copyright{
         font-size: 14px;
