@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2e5d43184e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <br><span>Mutahir Tayyab</span><br>from Pakistan</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user image">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a driven and adaptable individual, passionate about creating impactful web solutions. With a keen interest in learning new technologies and solving complex problems, I am committed to building efficient, scalable, and user-friendly web applications. My enthusiasm for web development, combined with a growth mindset, allows me to take on challenges confidently and continuously improve my skills. I strive for excellence in every project I undertake, ensuring high-quality results that exceed expectations. Explore my projects, get to know my work, or reach out to collaborate—I'm always ready for the next big opportunity.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>Creaing impactful & user-friendly Web Applications</li>
+                            <li><span>Video Editing</span><br>Creaing impactful & user-friendly Web Applications</li>
+                            <li><span>Social Media Management</span><br>Creaing impactful & user-friendly Web Applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Rhombix Technologies</span><br>Creating impactful & user-friendly Web Applications</li>
+                            <li><span>Mian Brothers Real Estate</span><br>Creaing impactful & user-friendly Web Applications</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Lahore Garrison University</span><br>Iam currently pursuing my Bachelor's in Computer Science from Lahore Garrison University</li>
+                            <li><span>Superior College</span><br>I have completed my Intermediate in Engineering from Superior Group of Colleges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developement</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste hic perspiciatis, adipisci tempora, quis illo, odio dolorum dignissimos eveniet temporibus facilis expedita aliquid velit excepturi. Incidunt, recusandae enim. Nulla.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Social Media Management</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste hic perspiciatis, adipisci tempora, quis illo, odio dolorum dignissimos eveniet temporibus facilis expedita aliquid velit excepturi. Incidunt, recusandae enim. Nulla.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-duotone fa-solid fa-video" style="--fa-primary-color: #ffffff; --fa-secondary-color: #ffffff;"></i>
+                    <h2>Video Editing</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus iste hic perspiciatis, adipisci tempora, quis illo, odio dolorum dignissimos eveniet temporibus facilis expedita aliquid velit excepturi. Incidunt, recusandae enim. Nulla.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Burger Hut Restaurant">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequuntur saepe itaque, soluta assumenda nisi magni quidem voluptates recusandae ipsa sequi distinctio pariatur! Beatae minus cumque sapiente sint sit.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequuntur saepe itaque, soluta assumenda nisi magni quidem voluptates recusandae ipsa sequi distinctio pariatur! Beatae minus cumque sapiente sint sit.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure aperiam consequuntur saepe itaque, soluta assumenda nisi magni quidem voluptates recusandae ipsa sequi distinctio pariatur! Beatae minus cumque sapiente sint sit.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/MutahirTayyab" class="btn" target="_blank">See more</a>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mutahirtayyab784@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+92 3216015896</p>
+
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="Mutahir's Resume.pdf" download class="btn btn2" target="_blank">Download Resume</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright &#169; Mutahir Tayyab.</p>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
